@@ -36,7 +36,7 @@
 							<ul class="nav navbar-nav navbar-left" id="navleft">
 									{{# each navLinks}}
 									<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-										<a href="{{ href }}">{{ label }}</a>
+										<a href="{{ href }}" class="linksNav">{{ label }}</a>
 									</li>
 								{{/each}}
 							</ul>

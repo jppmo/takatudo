@@ -16,18 +16,23 @@
 }
 
 .navbar {
-	background-color: #ef5411;
+	//background-color: #ef5411;
+	background-color: #ffffff;
+	border: 0px;
+
 
 }
 
 .nav.navbar-nav.navbar-left li a {
-		color: #FFFFFF;
-		margin-top: 50%;
+		color: #ef5411;
+		//margin-top: 50%;
 		font-size: 120%;
 		height: 80px;
 		width: 100px;
 		background-color: transparent;
 		text-align: center;
+		margin-top: 20%;
+
 }
 
 .nav.navbar-nav.navbar-left li a:hover {
@@ -43,6 +48,12 @@
 .navbar-brand {
 	height: auto;
 	width: auto;
+}
+
+.linksNav {
+	text-align: center;
+	vertical-align: center;
+
 }
 
 .btn-primary {
