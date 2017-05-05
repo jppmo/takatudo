@@ -14,3 +14,64 @@
     max-width: 100%;
     height: auto;
 }
+
+.navbar {
+	background-color: #ef5411;
+
+}
+
+.nav.navbar-nav.navbar-left li a {
+		color: #FFFFFF;
+		margin-top: 50%;
+		font-size: 120%;
+		height: 80px;
+		width: 100px;
+		background-color: transparent;
+		text-align: center;
+}
+
+.nav.navbar-nav.navbar-left li a:hover {
+	text-decoration: none;
+	color: #eeeeee;
+	background-color: transparent }
+
+.active {
+	height: inherit;
+	background-color: transparentize(white, 0.5);
+}
+
+.navbar-brand {
+	height: auto;
+	width: auto;
+}
+
+.btn-primary {
+  color: #fff;
+  //background-color: #337ab7;
+	background-color: #ef5411;
+/*border-color: #2e6da4;*/
+ border-color: #f4a742; }
+  .btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+    background-color: #286090;
+    border-color: #122b40; }
+  .btn-primary:hover {
+    color: #fff;
+    //background-color: #286090;
+		background-color: transparentize(#ef5411, 0.8);
+    border-color: #f4a742; }
+
+
+.thumbnail {
+	width: 160px;
+	height: 160px;
+}
+
+.carousel-inner {
+	width: inherit;
+	height: inherit;
+}
+.carouselImage {
+	width: 555px;
+	height: 555px;
+}

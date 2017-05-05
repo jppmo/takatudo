@@ -30,10 +30,10 @@
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
-							<a href="/" class="navbar-brand">Takatudo</a>
+							<a href="/" class="navbar-brand"><img src="/images/logotakatudo.png" width="160"></a>
 						</div>
 						<div class="collapse navbar-collapse">
-							<ul class="nav navbar-nav navbar-left">
+							<ul class="nav navbar-nav navbar-left" id="navleft">
 									{{# each navLinks}}
 									<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
 										<a href="{{ href }}">{{ label }}</a>
@@ -42,9 +42,9 @@
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								{{#if user}}
-								<li><a href="/keystone/signout">Sign Out</a></li>
+								<li><a href="/keystone/signout">o</a></li>
 								{{else}}
-								<li><a href="/keystone/signin">Sign In</a></li>
+								<li><a href="/keystone/signin">s</a></li>
 								{{/if}}
 							</ul>
 						</div>

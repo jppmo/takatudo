@@ -19,6 +19,7 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': '.hbs',
+	'signin logo': ['../images/logotakatudo.png', 200, 100],
 
 	'custom engine': handlebars.create({
 		layoutsDir: 'templates/views/layouts',
