@@ -34,10 +34,10 @@ var routes = {
 // Setup Route Bindings
 exports = module.exports = function (app) {
 	// Views
-	app.get('/', routes.views.index);
+	app.get('/', routes.views.products);
 	app.get('/blog/:category?', routes.views.blog);
 	app.get('/blog/post/:post', routes.views.post);
-	app.get('/gallery', routes.views.gallery);
+	//app.get('/gallery', routes.views.gallery);
 	app.get('/products/:product', routes.views.product);
 	app.get('/products', routes.views.products);
 	app.all('/contact', routes.views.contact);

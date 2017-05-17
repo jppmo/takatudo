@@ -5830,6 +5830,9 @@ button.close {
   padding-top: 30px;
   color: #777777; }
 
+.container {
+  height: 100%; }
+
 .gallery-image img {
   display: block;
   max-width: 100%;
@@ -5892,3 +5895,263 @@ button.close {
 .carouselImage {
   width: 555px;
   height: 555px; }
+
+.carousel-inner, .carousel, .item, .fill {
+  height: 300px;
+  background-position: center center;
+  background-size: cover; }
+
+.slide-wrapper {
+  display: inline; }
+
+.slide-wrapper .container {
+  padding: 0px; }
+
+/*------------------------------ vertical bootstrap slider----------------------------*/
+.carousel-inner > .item.next, .carousel-inner > .item.active.right {
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  top: 0;
+  left: 0; }
+
+.carousel-inner > .item.prev, .carousel-inner > .item.active.left {
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  top: 0;
+  left: 0; }
+
+.carousel-inner > .item.next.left, .carousel-inner > .item.prev.right, .carousel-inner > .item.active {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  top: 0;
+  left: 0; }
+
+/*------------------------------- vertical carousel indicators ------------------------------*/
+.carousel-indicators {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20px;
+  right: 10px;
+  left: auto;
+  width: auto; }
+
+.carousel-indicators li {
+  display: block;
+  margin-bottom: 5px;
+  border: 1px solid #00a199; }
+
+.carousel-indicators li.active {
+  margin-bottom: 5px;
+  background: #00a199; }
+
+/*-------- Animation slider ------*/
+.animated {
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -ms-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease; }
+
+.carousel-img {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center; }
+
+.item img {
+  margin: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease; }
+
+.item1 .carousel-img img, .item1.active .carousel-img img {
+  max-height: 300px; }
+
+.item1.active .carousel-img img.animated {
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s; }
+
+.item .carousel-desc {
+  color: #fff;
+  text-align: center; }
+
+.item h2 {
+  font-size: 50px;
+  animation-delay: 1.5s;
+  animation-duration: 1s; }
+
+.item p {
+  animation-delay: 2.5s;
+  animation-duration: 1s;
+  width: 50%;
+  margin: auto; }
+
+.item2 .carousel-img img, .item2.active .carousel-img img {
+  max-height: 300px; }
+
+.item2.active .carousel-img img.animated {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease;
+  animation-duration: 3s;
+  animation-delay: 0.3s; }
+
+.item2 h2, item2.active h2 {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 5s ease; }
+
+.item2.active h2.animated {
+  visibility: visible;
+  opacity: 1;
+  animation-delay: 3s; }
+
+.item .fill {
+  padding: 0px 30px;
+  display: table; }
+
+.item .inner-content {
+  display: table-cell;
+  vertical-align: middle; }
+
+.item3 .col-md-6 {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 49%; }
+
+.item3.active .carousel-img img.animated {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease;
+  animation-duration: 2s;
+  animation-delay: 0.3s; }
+
+.item3 h2, item3.active h2 {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 5s ease; }
+
+.item.item3 .carousel-desc {
+  text-align: left; }
+
+.item3.active h2.animated {
+  visibility: visible;
+  opacity: 1;
+  animation-delay: 1.5s; }
+
+.item3 p, item3.active p {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 5s ease;
+  width: 100%; }
+
+.item3.active p.animated {
+  visibility: visible;
+  opacity: 1;
+  animation-delay: 2.5s; }
+
+@media (max-width: 991px) {
+  .item .carousel-desc, .item.item3 .carousel-desc {
+    text-align: center; }
+  .item .carousel-desc p {
+    width: 80%; }
+  .item3 .col-md-6 {
+    width: 100%;
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  .item .carousel-img img, .item.active .carousel-img img {
+    max-height: 155px; }
+  .item h2 {
+    font-size: 30px;
+    margin-top: 0px; }
+  .item .carousel-desc p {
+    width: 100%;
+    font-size: 12px; } }
+
+@media (max-width: 480px) {
+  .item h2 {
+    font-size: 30px; }
+  .item .carousel-desc p {
+    width: 100%; } }
+
+.footerContainer {
+  margin-left: 17%; }
+
+.cuadro_intro_hover {
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  align-content: center;
+  text-align: center; }
+
+.cuadro_intro_hover:hover .caption {
+  opacity: 1;
+  transform: translateY(-150px);
+  -webkit-transform: translateY(-150px);
+  -moz-transform: translateY(-150px);
+  -ms-transform: translateY(-150px);
+  -o-transform: translateY(-150px); }
+
+.cuadro_intro_hover img {
+  z-index: 4; }
+
+.cuadro_intro_hover .caption {
+  position: absolute;
+  top: 150px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%; }
+
+.cuadro_intro_hover .blur {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 300px;
+  z-index: 5;
+  position: absolute;
+  width: 100%; }
+
+.cuadro_intro_hover .caption-text {
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  height: 300px;
+  text-align: center;
+  top: -20px;
+  width: 100%; }
